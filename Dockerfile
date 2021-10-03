@@ -17,3 +17,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /app
 COPY --from=build /app ./
 ENTRYPOINT ["dotnet", "ConversaoPeso.Web.dll"]
+#EXPOSE 5000
+#EXPOSE 5001
+EXPOSE 80
